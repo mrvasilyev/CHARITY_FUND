@@ -5,6 +5,7 @@ import Step_1 from '../components/Step1'
 import Step_2 from '../components/Step2'
 import Step_3 from '../components/Step3'
 import Step_4 from '../components/Step4'
+import Step_5 from '../components/Step5'
 import NotFound from '../components/NotFound'
 
 Vue.use(Router)
@@ -33,6 +34,12 @@ let router = new Router({
 			path: '/step4',
 			name: 'step_4',
 			component: Step_4,
+			props: true,
+		},
+		{
+			path: '/step5',
+			name: 'step_5',
+			component: Step_5,
 			props: true,
 		},
 		{ path: '/404', component: NotFound },

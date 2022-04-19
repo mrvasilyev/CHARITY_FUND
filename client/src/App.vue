@@ -11,8 +11,8 @@
 								width="30%"
 							/>
 							<h1 class="text-xl mt-2">Благотворительный фонд школы</h1>
-							<h1 class="text-xs px-4 mt-2">Даже небольшое регулярное пожертвование поможет нашей работе</h1>
 						</div>
+						<text-bar></text-bar>
 						<steps-bar></steps-bar>
 						<router-view></router-view>
 					</div>
@@ -24,6 +24,7 @@
 
 <script>
 import stepsBar from '@/components/StepsBar'
+import TextBar from '@/components/TextBar'
 
 export default {
 	name: 'App',
@@ -32,6 +33,7 @@ export default {
 	},
 	components: {
 		stepsBar,
+		TextBar,
 	},
 }
 </script>

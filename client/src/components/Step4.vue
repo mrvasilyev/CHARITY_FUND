@@ -36,7 +36,7 @@ export default {
 				this.$store.getters.PAYMENT_TOKEN.confirmation_token
 				const checkout = new window.YooMoneyCheckoutWidget({
 					confirmation_token: confirmation_token, //Токен, который перед проведением оплаты нужно получить от Яндекс.Кассы
-					return_url: 'https://yookassa.ru/', //Ссылка на страницу завершения оплаты
+					return_url: 'http://localhost:8080/#/step5', //Ссылка на страницу завершения оплаты
 					error_callback(error) {
 						//Обработка ошибок инициализации
 						console.log('error_callback -> error', error)
